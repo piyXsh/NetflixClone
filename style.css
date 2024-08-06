@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 110%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 20%;
+    z-index: 10;
+}
+
+.navbar_netflix {
+    height:100%;
+    width:145px;
+}
+
+.navbar_nav_items {
+    display: flex;
+    gap: 20px;
+}
+
+.netflix_logo {
+    height:100%;
+    width:100%;
+}
+.language_dropdown {
+    background-color: transparent;
+    font-weight: 550;
+    border: none;
+    color: white;
+} 
+
+.dropdown_container {
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.signin_button {
+    border: #dc030f;
+    background-color: #dc030f;
+    color: white;
+    font-weight: 550;
+    padding: 0.55rem 1rem;
+    border-radius: 4px;
+}
+
+.signin_button:hover {
+    background-color: #c11119;
+}
+
+.bg_img_cont {
+    width: 100%;
+    height: 100%;
+}
+
+.bg_img {
+    width: 103%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.bg_overlay {
+    position: absolute;
+    inset: 0;
+    width: 103%;
+    height: 700px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.text {
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 1.5 rem;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.enter-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center; 
+    background-color: transparent;
+    font-weight: 550;
+    border: none;
+    color: white;
+}
+
+.email {
+    border:1px solid #626262;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding-left: 12px;
+    padding-top: 5px;
+    font-size: 1rem;
+    width: 400px;
+    height:60px;  
+}
+
+
+.get_started {
+    width: 200px;
+    height: 60px;
+    font-size: 1.5rem;
+    border: #dc030f;
+    background-color: #dc030f;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+}
+
+.get_started:hover {
+    background-color: #c11119;
+}
+
+.style-card h1 {
+    font-size: 3rem;
+    font-weight: 850;
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.style-card h3 {
+    font-weight: 100;
+    font-size: 1.5rem;
+    line-height: 2rem;;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-3,
+.card-4,
+.card-5 {
+    width:110%;
+    border-top: 8px solid #232323;
+    padding: 50px;
+}
+
+.card-1 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-1 {
+    padding-left: 80px;
+}
+
+.card-1 video {
+    position:relative;
+    width: 100%;
+    height: 54%;
+    top:-8.5px;
+    z-index: -1;
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.card-1 img {
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.card-2 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 70%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 100px 50px;
+    margin-left: -80px;
+}
+
+.desc-2 {
+    padding-left:150px;
+}
+
+.card-3 {
+    width: 110%;
+    border-top: 8px solid #232323;
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 125px 50px;
+    margin-left:-60px;
+}
+
+.desc-3 {
+    padding-left: 80px;
+    padding-right: 25px;
+}
+
+.card-3 img {
+    padding-left:-100px;
+    width:110%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.card-3 video {
+    position:relative;
+    top:-80px;
+    left:125px;
+    width: 65%;
+    height: 78%;
+    z-index: -1;
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.card-4 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 70%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 100px 100px;
+    
+}
+
+.desc-4 {
+    padding-left:150px;
+}
+
+.faq {
+    list-style-type: none
+}
+
+.card-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 8px solid #232323;
+    margin-left: -70px;
+}
+
+.question1,
+.question2,
+.question3,
+.question4,
+.question5,
+.question6 {
+    background-color: #2d2d2d;
+    color: white;
+    width:1200px;
+    height: 80px;
+    align-items: center;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.95% 2.8%;
+    border: none;
+    margin-bottom: 10px;
+}
+
+
+
+.button2 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.question1:hover,
+.question2:hover,
+.question3:hover,
+.question4:hover,
+.question5:hover,
+.question6:hover {
+    background-color: #414141;
+} 
+
+.footer,
+.footer-items {
+    color: #999;
+    margin-left: 100px;
+}
+
+.footer {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-right:-20px;
+}
+
+.footer p {
+    margin-bottom: 1.5rem;
+    padding-left: 100px;
+}
+
+.footer ul {
+    list-style-type: none
+}
+
+.footer-items {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.footer li {
+    line-height: 1.9;
+}
+
+.dropdown_container2 {
+    
+    width:110px;
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+
+}
+
+
+#last {
+    width:100%;
+    height:100%;
+    padding-top: 30px;
+}
+
